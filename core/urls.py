@@ -19,3 +19,9 @@ from django.urls import path
 urlpatterns = [
     path("admin/", admin.site.urls),
 ]
+
+# Exception handling
+handler400 = "core.views.handler400"
+handler403 = "core.views.handler403"
+handler404 = "core.views.handler404"
+handler500 = "core.views.handler500"
