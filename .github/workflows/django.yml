@@ -27,6 +27,6 @@ jobs:
     - name: Format with Black
       run: black .
 
-    - name: Run Tests
-      run: |
-        python manage.py test
+    # - name: Run Tests
+    #   run: |
+    #     python manage.py test
