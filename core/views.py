@@ -1,8 +1,12 @@
 from django.shortcuts import render
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 def homepage(request):
     """Display the home page"""
+    logger.warning("Open home page app")
     return render(request, "home.html")
 
 
