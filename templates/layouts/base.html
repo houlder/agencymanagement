@@ -7,18 +7,23 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Agency management</title>
+        {% block title %}
+            <title>Agency management</title>
+        {% endblock %}
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Add additional CSS in static file -->
+        {% load static %}
         <link rel="stylesheet" href="">
-        {% block css %}{% endblock css %}
+        {% block css %}{% endblock %}
     </head>
     <body>
-        {% block content %}{% endblock content %}
+        {% block nav %}{% endblock %}
+        {% block content %}{% endblock %}
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <script src="" async defer></script>
-        {% block js %}{% endblock js %}
+        {% block js %}{% endblock %}
     </body>
 </html>
